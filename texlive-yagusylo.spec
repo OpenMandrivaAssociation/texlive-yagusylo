@@ -1,12 +1,12 @@
-# revision 15878
+# revision 29803
 # category Package
 # catalog-ctan /macros/latex/contrib/yagusylo
-# catalog-date 2009-03-03 08:06:14 +0100
+# catalog-date 2012-07-21 17:20:52 +0200
 # catalog-license lppl
 # catalog-version 1.2
 Name:		texlive-yagusylo
 Version:	1.2
-Release:	2
+Release:	3
 Summary:	A symbol loader
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/yagusylo
