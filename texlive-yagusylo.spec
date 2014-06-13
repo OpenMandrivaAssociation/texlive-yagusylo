@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-yagusylo
 Version:	1.2
-Release:	7
+Release:	8
 Summary:	A symbol loader
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/yagusylo
