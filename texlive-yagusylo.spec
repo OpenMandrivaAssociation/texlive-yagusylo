@@ -1,19 +1,13 @@
-# revision 29803
-# category Package
-# catalog-ctan /macros/latex/contrib/yagusylo
-# catalog-date 2012-07-21 17:20:52 +0200
-# catalog-license lppl
-# catalog-version 1.2
 Name:		texlive-yagusylo
-Version:	1.2
-Release:	12
+Version:	29803
+Release:	1
 Summary:	A symbol loader
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/yagusylo
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yagusylo.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yagusylo.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yagusylo.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yagusylo.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yagusylo.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yagusylo.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ clashes that so commonly trouble those who load symbol-
 packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,8 @@ packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
