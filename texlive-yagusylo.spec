@@ -1,6 +1,6 @@
 Name:		texlive-yagusylo
 Version:	29803
-Release:	1
+Release:	2
 Summary:	A symbol loader
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/yagusylo
